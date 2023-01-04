@@ -3,13 +3,8 @@ package br.com.benefrancis.model;
 /**
  * Expressão negativa
  */
-public final class Subtracao implements Expressao {
-    Expressao e;
-
-    public Subtracao(Expressao e) {
-        this.e = e;
-    }
-
+public record Subtracao(Expressao e)  implements Expressao {
+    @Override
     public double eval() {
         return -e.eval();
     }

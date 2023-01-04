@@ -3,14 +3,9 @@ package br.com.benefrancis.model;
 /**
  * Expressão de multiplicação
  */
-public final class Multiplicacao implements Expressao {
-    Expressao a, b;
+public record Multiplicacao(Expressao a, Expressao b) implements Expressao {
 
-    public Multiplicacao(Expressao a, Expressao b) {
-        this.a = a;
-        this.b = b;
-    }
-
+    @Override
     public double eval() {
         return a.eval() * b.eval();
     }
