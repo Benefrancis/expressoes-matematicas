@@ -12,7 +12,7 @@ seladas
 # Exemplo de Uso
 
 
-```javascript (6 + 7) * -8/2 = -52
+```java (6 + 7) * -8/2 = -52
 package br.com.benefrancis;
 
 import br.com.benefrancis.model.*;
